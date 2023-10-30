@@ -19,6 +19,5 @@ jobs:
     - name: Install Dependencies from upload test repo
       run: pip install -r orie5355_upload_test/requirements.txt
     
-
-    - name: Run the submission code to test
+    - name: Test the submitted code
       run: python orie5355_upload_test/test.py
