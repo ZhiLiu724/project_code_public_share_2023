@@ -16,7 +16,6 @@ jobs:
         repository: ZhiLiu724/orie5355_upload_test
         path: orie5355_upload_test
 
-    - name: Install Dependencies
-      run: 
-        echo '------INSTALLING DEPENDENCIES------'
-        sudo -H pip3 install -r orie5355_upload_test/requirements.txt
+    - name: Install Dependencies from upload test repo
+      run: pip install -r orie5355_upload_test/requirements.txt
+      
