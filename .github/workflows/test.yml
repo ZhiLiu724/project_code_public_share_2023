@@ -15,8 +15,8 @@ jobs:
       with:
         repository: ZhiLiu724/orie5355_upload_test
         path: orie5355_upload_test
-        token: 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
 
-    - name: Install Dependencies and Run Grading Script
+    - name: Install Dependencies
       run: 
-        echo 'hello world'
+        echo '------INSTALLING DEPENDENCIES------'
+        sudo -H pip3 install -r orie5355_upload_test/requirements.txt
