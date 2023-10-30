@@ -1,0 +1,22 @@
+name: discrepancy_test
+
+on: [push, pull_request]
+
+jobs:
+  grade:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout student code
+      uses: actions/checkout@v2
+
+    - name: Checkout grading scripts
+      uses: actions/checkout@v2
+      with:
+        repository: ZhiLiu724/orie5355_upload_test
+        path: orie5355_upload_test
+        token: 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
+
+    - name: Install Dependencies and Run Grading Script
+      run: 
+        echo 'hello world'
