@@ -1,9 +1,9 @@
-name: discrepancy_test
+name: submission_test
 
 on: [push, pull_request]
 
 jobs:
-  grade:
+  submission_test:
     runs-on: ubuntu-latest
     
     steps:
